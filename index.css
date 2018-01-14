@@ -1,101 +1,37 @@
-html, body {
-    height: 100%;
-    margin: 0;
+* {
     font-family: 'Raleway', sans-serif;
-    color: #111;
-    font-size: 1rem;
 }
-body {
-    display: flex;
-    flex-direction: column;
+h1 {
+    letter-spacing: 8px;
+}
+h5 {
+    letter-spacing: 3px;
+}
+a {
+    color: #212121;
+}
+a:hover {
+    color: #FF8800;
+}
+#intro {
     height: 100vh;
 }
-/* Main wrapper */
-.main {
+#contact {
+    height: 83vh;
 }
-/* Intro section */
-.intro {
-    background-image: url('./img/pexels-photo-3.jpeg');
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-attachment: fixed;
+#about, #contact {
+    margin-top: 2rem;
+}
+.flex-center {
+    color: #fff;
+}
+.intro-section {
+    background: url("./img/pexels-photo-3.jpeg")no-repeat center center;
     background-size: cover;
-    height: 50vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    background-attachment: fixed;
 }
-.intro-text {
-    text-align: center;
-    color: #FFF;
-    font-size: 3rem;
-}
-.intro-text > p {
-    font-size: 2rem;
-}
-/* Portfolio */
-.portfolio {
-    text-align: center;
-    background-color: #DDD;
-    height: 50vh;
-}
-.projects {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-around;
-}
-.project {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex: 1 0 50%;
-    width: 25%;
-    height: 25vh;
-    min-width: 300px;
-    background-image: url('./img/pexels-photo-2.jpeg');
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: inherit;
-}
-.project-1 {
-    background-image: url('./img/ausitess.png');
-}
-.project-2 {
-    background-image: url('./img/forumdss.png');
-}
-.project-3 {
-    background-image: url('./img/reactjsweatherss.png');
-}
-.project-text {
-    font-size: 2rem;
-    color: #EEE;
-    padding: 0 2rem;
-    background-color: rgba(255, 0, 200, 0.5);
-}
-/* Content wrapper */
-.content {
-    padding: 20px 40px;
-}
-@media (max-width: 600px) {
-    .content {
-        margin-top: 50vh;
-        padding: 20px 40px;
-    }
-}
-@media (min-width: 700px) {
-    .content {
-        padding: 20px 40px;
-    }
-}
-/* Footer */
-.footer {
-    flex-shrink: 0;
-    /*background: linear-gradient(to bottom left, #FF7600, #A800AE);*/
-    background-color: #212121;
-}
-.footer-text {
-    color: #FFF;
-    padding: 30px;
+footer.page-footer {
+    margin-top: 0;
 }
 /* Scrollbar */
 ::-webkit-scrollbar {
@@ -107,6 +43,7 @@ body {
     -webkit-border-radius: 4px;
     box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.25);
     border-radius: 4px;
+    /* display: none; */
 }
 /* Handle */
 ::-webkit-scrollbar-thumb {
