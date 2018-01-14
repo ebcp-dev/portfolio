@@ -13,26 +13,23 @@ a {
 a:hover {
     color: #FF8800;
 }
-#intro {
+#intro, #contact {
     height: 100vh;
 }
 #about {
     margin-top: 1.5rem;
-}
-#contact {
-    margin: 5rem 0 5rem;
-    height: 83vh;
-}
-@media (max-width: 700px) {
-    #contact {
-        height: 100vh;
-    }
+    margin-bottom: 5rem;
 }
 .flex-center {
     color: #fff;
 }
-.intro-section {
+.intro-bg {
     background: url("./img/pexels-photo-3.jpeg")no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.contact-bg {
+    background: url("./img/pexels-photo-5.jpeg")no-repeat center center;
     background-size: cover;
     background-attachment: fixed;
 }
