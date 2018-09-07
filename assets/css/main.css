@@ -2,10 +2,46 @@
   margin-top: 10rem !important;
 }
 .main-bg {
-  background: rgb(83, 0, 255);
-  background: linear-gradient(
-    158deg,
-    rgba(85, 0, 255, 0.993) 0%,
-    rgba(200, 0, 255, 0.788) 100%
-  );
+  color: hsl(324, 70%, 45%);
+  animation: wheelHueColor 10s infinite;
+  background-color: currentColor;
+}
+@supports (background-blend-mode: overlay) {
+  .background {
+    background-image: linear-gradient(45deg, white 10%, black 90%);
+    background-blend-mode: overlay;
+  }
+}
+@keyframes wheelHueColor {
+  from,
+  to {
+    color: hsl(324, 100%, 50%);
+  }
+  10% {
+    color: rgb(216, 32, 32);
+  }
+  20% {
+    color: hsl(36, 80%, 45%);
+  }
+  30% {
+    color: hsl(305, 100%, 50%);
+  }
+  40% {
+    color: hsl(286, 100%, 30%);
+  }
+  50% {
+    color: hsl(266, 100%, 65%);
+  }
+  60% {
+    color: hsl(271, 93%, 47%);
+  }
+  70% {
+    color: hsl(216, 60%, 45%);
+  }
+  80% {
+    color: hsl(252, 65%, 50%);
+  }
+  90% {
+    color: hsl(288, 60%, 40%);
+  }
 }
