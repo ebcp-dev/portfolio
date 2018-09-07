@@ -1,0 +1,11 @@
+.mt-10 {
+  margin-top: 10rem !important;
+}
+.main-bg {
+  background: rgb(83, 0, 255);
+  background: linear-gradient(
+    158deg,
+    rgba(85, 0, 255, 0.993) 0%,
+    rgba(200, 0, 255, 0.788) 100%
+  );
+}
