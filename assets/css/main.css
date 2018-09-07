@@ -15,16 +15,16 @@
 @keyframes wheelHueColor {
   from,
   to {
-    color: hsl(324, 100%, 50%);
+    color: hsl(271, 100%, 33%);
   }
   10% {
-    color: rgb(216, 32, 32);
+    color: hsl(273, 100%, 50%);
   }
   20% {
-    color: hsl(36, 80%, 45%);
+    color: hsl(266, 100%, 31%);
   }
   30% {
-    color: hsl(305, 100%, 50%);
+    color: hsl(305, 97%, 27%);
   }
   40% {
     color: hsl(286, 100%, 30%);
