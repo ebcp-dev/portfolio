@@ -1,8 +1,8 @@
-import PropTypes from 'prop-types'
-import React from 'react'
-import resumerss from '../images/resumer-ss.png'
-import forumdss from '../images/forumd-ss.png'
-import resume from '../images/resume.jpg'
+import PropTypes from 'prop-types';
+import React from 'react';
+import resumerss from '../images/resumer-ss.png';
+import forumdss from '../images/forumd-ss.png';
+import resume from '../images/Resume.jpg';
 
 class Main extends React.Component {
   render() {
@@ -10,10 +10,10 @@ class Main extends React.Component {
       <div
         className="close"
         onClick={() => {
-          this.props.onCloseArticle()
+          this.props.onCloseArticle();
         }}
       ></div>
-    )
+    );
 
     return (
       <div
@@ -134,7 +134,7 @@ class Main extends React.Component {
           {close}
         </article>
       </div>
-    )
+    );
   }
 }
 
@@ -144,7 +144,7 @@ Main.propTypes = {
   articleTimeout: PropTypes.bool,
   onCloseArticle: PropTypes.func,
   timeout: PropTypes.bool,
-  setWrapperRef: PropTypes.func.isRequired,
-}
+  setWrapperRef: PropTypes.func.isRequired
+};
 
-export default Main
+export default Main;
