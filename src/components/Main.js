@@ -40,7 +40,7 @@ class Main extends React.Component {
           </h3>
           <p>
             Made with Node.js/Express, React, Redux, PostgreSQL, Mocha, Chai,
-            Travis CI, Docker, Kubernetes, AWS
+            Travis CI, AWS
           </p>
           <span className="image main">
             <img src={resumerss} alt="Resumer screenshot" />
@@ -53,8 +53,7 @@ class Main extends React.Component {
             Authentication is handled by Passport.js using JWT. The API is
             tested with Mocha and Chai and is integrated with Travis CI. The
             frontend is made with React, Redux and Axios for making HTTP
-            requests to the API. Resumer is deployed on Google Cloud Platform's
-            Kubernetes Engine using Docker and Kompose.
+            requests to the API.
           </p>
           <hr />
           <h3>
