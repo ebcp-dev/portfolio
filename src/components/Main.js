@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types';
 import React from 'react';
+import { withPrefix } from 'gatsby';
 import resumerss from '../images/resumer-ss.png';
 import forumdss from '../images/forumd-ss.png';
 import resume from '../images/Resume.jpg';
@@ -88,7 +89,7 @@ class Main extends React.Component {
           style={{ display: 'none' }}
         >
           <h2 className="major">Resume</h2>
-          <a target="_blank" href="./Resume.pdf">
+          <a target="_blank" href={withPrefix('/Resume.pdf')}>
             Download
           </a>
           <span className="image main">
