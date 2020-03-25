@@ -107,29 +107,27 @@ class Main extends React.Component {
           }`}
           style={{ display: 'none' }}
         >
-          <h2 className="major">Contact</h2>
-          <ul className="icons">
+          <h2 className="major">Contact Info</h2>
+          <ul style={{ 'list-style-type': 'none' }}>
             <li>
-              <a
-                target="_blank"
-                href="https://github.com/ebcp-dev/"
-                className="icon fa-github"
-              >
-                <span className="label">GitHub</span>
+              <a target="_blank" href="https://github.com/ebcp-dev/">
+                <span className="icon fa-github"> Visit my GitHub</span>
               </a>
             </li>
             <li>
-              <a
-                target="_blank"
-                href="https://www.linkedin.com/in/earl-perez/"
-                className="icon fa-linkedin"
-              >
-                <span className="label">LinkedIn</span>
+              <a target="_blank" href="https://www.linkedin.com/in/earl-perez/">
+                <span className="label icon fa-linkedin">
+                  {' '}
+                  Connect with me in LinkedIn
+                </span>
               </a>
             </li>
             <li>
-              <a href="mailto:ebcp.dev@gmail.com" className="icon fa-envelope">
-                <span className="label">Email</span>
+              <a href="mailto:ebcp.dev@gmail.com">
+                <span className="label icon fa-envelope">
+                  {' '}
+                  Contact me by email
+                </span>
               </a>
             </li>
           </ul>
