@@ -115,14 +115,6 @@ class Main extends React.Component {
               </a>
             </li>
             <li>
-              <a target="_blank" href="https://www.linkedin.com/in/earl-perez/">
-                <span className="label icon fa-linkedin">
-                  {' '}
-                  Connect with me in LinkedIn
-                </span>
-              </a>
-            </li>
-            <li>
               <a href="mailto:ebcp.dev@gmail.com">
                 <span className="label icon fa-envelope">
                   {' '}
