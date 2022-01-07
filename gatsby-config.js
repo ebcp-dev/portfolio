@@ -1,23 +1,61 @@
+require(`dotenv`).config();
+
+const shouldAnalyseBundle = process.env.ANALYSE_BUNDLE;
+
 module.exports = {
   siteMetadata: {
-    title: 'Earl Perez - Portfolio',
-    author: 'Earl Perez',
-    description: 'A portfolio website made with Gatsby.',
+    // You can overwrite values here that are used for the SEO component
+    // You can also add new values here to query them like usual
+    // See all options: https://github.com/LekoArts/gatsby-themes/blob/main/themes/gatsby-theme-cara/gatsby-config.js
+    siteTitle: `Earl Perez`,
+    siteTitleAlt: `Earl Perez - Portfolio`,
+    siteHeadline: `Earl Perez`,
+    siteUrl: `https://earlperez.netlify.app/`,
+    siteDescription: `Playful and Colorful One-Page portfolio featuring Parallax effects and animations`,
+    siteLanguage: `en`,
+    siteImage: `/banner.jpg`,
+    author: `Earl Perez`
   },
   plugins: [
-    'gatsby-plugin-react-helmet',
+    {
+      resolve: `@lekoarts/gatsby-theme-cara`,
+      // See the theme's README for all available options
+      options: {}
+    },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: 'earl perez portfolio',
-        short_name: 'portfolio',
-        start_url: '/',
-        background_color: '#663399',
-        theme_color: '#663399',
-        display: 'minimal-ui',
-        icon: 'src/images/website-icon.png', // This path is relative to the root of the site.
-      },
+        name: `Earl Perez`,
+        short_name: `EarlP`,
+        description: `Playful and Colorful One-Page portfolio featuring Parallax effects and animations`,
+        start_url: `/`,
+        background_color: `#141821`,
+        // This will impact how browsers show your PWA/website
+        // https://css-tricks.com/meta-theme-color-and-trickery/
+        // theme_color: `#f6ad55`,
+        display: `standalone`,
+        icons: [
+          {
+            src: `/android-chrome-192x192.png`,
+            sizes: `192x192`,
+            type: `image/png`
+          },
+          {
+            src: `/android-chrome-512x512.png`,
+            sizes: `512x512`,
+            type: `image/png`
+          }
+        ]
+      }
     },
-    'gatsby-plugin-sass',
-  ],
-}
+    `gatsby-plugin-gatsby-cloud`,
+    shouldAnalyseBundle && {
+      resolve: `gatsby-plugin-webpack-bundle-analyser-v2`,
+      options: {
+        analyzerMode: `static`,
+        reportFilename: `_bundle.html`,
+        openAnalyzer: false
+      }
+    }
+  ].filter(Boolean)
+};
