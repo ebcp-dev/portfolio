@@ -3,7 +3,7 @@ layout: ../../layouts/project.astro
 title: CalAmp
 client: Self
 publishDate: 2019-02-01 16:00:00 -0800
-img: ../assets/calamp-ss.png
+img: /assets/calamp-ss.png
 description: |
   Worked on CalAmp's Asset Management Platform as a Frontend Developer.
 tags:
