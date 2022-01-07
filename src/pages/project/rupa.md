@@ -3,7 +3,7 @@ layout: ../../layouts/project.astro
 title: Rupa, Inc.
 client: Self
 publishDate: 2019-04-01 16:00:00 -0800
-img: ../../../public/assets/rupa-ss.png
+img: ../assets/rupa-ss.png
 description: |
   Worked on Rupa's Electronic Lab Test Management System (ELTMS) as a React Developer.
 tags:

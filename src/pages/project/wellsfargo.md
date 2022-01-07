@@ -3,7 +3,7 @@ layout: ../../layouts/project.astro
 title: Wells Fargo
 client: Self
 publishDate: 2017-11-01 16:00:00 -0800
-img: ../../../public/assets/wellsfargo-ss.png
+img: ../assets/wellsfargo-ss.png
 description: |
   Worked on Wells Fargo's Transaction Match Platform as a Frontend Developer.
 tags:

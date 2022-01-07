@@ -3,7 +3,7 @@ layout: ../../../layouts/project.astro
 title: Resumer.xyz
 client: Self
 publishDate: 2020
-img: ../../../../public/assets/resumer-ss.png
+img: ../assets/resumer-ss.png
 description: |
   A FullStack JavaScript web app with Express and React.
 tags:
