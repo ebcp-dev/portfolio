@@ -1,0 +1,42 @@
+---
+import MainHead from '../components/MainHead.astro';
+import Footer from '../components/Footer/index.jsx';
+import Nav from '../components/Nav/index.jsx';
+---
+
+<html lang="en">
+	<head>
+		<MainHead title="About | Earl Perez" description="About Earl Perez" />
+		<style lang="scss">
+			.heroImg {
+				max-height: 24rem;
+				object-fit: cover;
+				overflow: hidden;
+
+				img {
+					width: 100%;
+				}
+			}
+
+			.bio {
+				font-size: var(--f-u1);
+				line-height: 2;
+			}
+		</style>
+	</head>
+	<body>
+		<Nav />
+		<div class="wrapper">
+			<h1>About Me</h1>
+			<div class="heroImg">
+				<img width="1400" height="350" src="https://images.unsplash.com/photo-1587620962725-abab7fe55159?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2531&q=80" />
+			</div>
+			<div class="bio wrapper wrapper__readable mt8">
+				<p>
+					I am a Software Developer with experience in developing interactive and responsive web applications using React with TypeScript, Redux, HTML, CSS/SASS, Webpack and various UI libraries and frameworks such as Material UI, Bulma, Bootstrap, etc.. I am also familiar with TDD and unit testing tools such as Jest, Enzyme, Mocha, and Chai. I also have experience in back‑end development using Express/Node.js, MongoDB, and SQL.
+				</p>
+			</div>
+		</div>
+		<Footer />
+	</body>
+</html>
