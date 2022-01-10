@@ -12,10 +12,8 @@ tags:
   - Redux
   - React Router
   - SCSS
-  - Chart.js
   - Jest
-  - Express/Node.js
-  - Postman
+  - Express
 ---
 
 ### Frontend Developer (Nov 2016 - Nov 2017)
